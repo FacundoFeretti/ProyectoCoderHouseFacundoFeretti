@@ -2,7 +2,7 @@
     background-color: #07090F !important;
     border-radius: 6px;
     .navbar-brand{
-        color: aliceblue;
+        color: $color1;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
     }
@@ -11,7 +11,7 @@
         padding: 0;
     }
     .navbar-toggler, .nav-link, .navbar-toggler-icon, .dropdown-item{
-        color: aliceblue !important;
+        color: $color1 !important;
     }
     .navbar-toggler-icon{
         background-size: 115%;

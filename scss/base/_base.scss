@@ -9,7 +9,7 @@ main{
 
 a:hover{
     font-weight: bolder !important;
-    color: aliceblue !important;
+    color: $color1 !important;
 }
 
 .carousel-item img{
@@ -45,7 +45,7 @@ a:hover{
 
 #title-categorias{
     margin: 25px 0;
-    color: aliceblue;
+    color: $color1;
 }
 
 

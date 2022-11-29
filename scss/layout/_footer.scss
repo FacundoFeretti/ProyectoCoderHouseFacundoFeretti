@@ -1,12 +1,28 @@
-.footer{
+.footer-contacto{
     background-color: transparent;
     font-weight: bold;
-    color: aliceblue;
+    color: $color1;
     margin-top: 50px;
-    .derechos-reservados{
-        margin-bottom: 0;
-        border-top: 2px solid aliceblue;
-        padding-top: 20px;
-    }
 }
 
+.social-media{
+    width: 98vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+
+    .social-media-icon{
+        height: 30px;
+        width: 30px;
+    }
+    
+}
+
+.derechos-reservados{
+    margin-bottom: 0;
+    border-top: 2px solid $color1;
+    padding-top: 20px;
+    color: $color1;
+}
