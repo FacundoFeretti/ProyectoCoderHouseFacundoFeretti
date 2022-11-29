@@ -1,0 +1,142 @@
+body {
+  background-image: linear-gradient(#07090F, #262626);
+  font-family: 'Montserrat', sans-serif; }
+
+main {
+  text-align: center; }
+
+a:hover {
+  font-weight: bolder !important;
+  color: aliceblue !important; }
+
+.carousel-item img {
+  height: 250px; }
+
+.info-compra {
+  background-color: #2b303a;
+  text-align: center;
+  border-radius: 4px;
+  color: wheat;
+  font-weight: bold;
+  height: 100px;
+  margin-top: 1em; }
+  .info-compra .info-compra-item {
+    padding-top: 25px; }
+    .info-compra .info-compra-item img {
+      transform: rotate(0deg);
+      transition: all 1s ease; }
+      .info-compra .info-compra-item img:hover {
+        transform: rotate(360deg);
+        transition: all 1s ease; }
+    .info-compra .info-compra-item p {
+      display: inline-block;
+      margin-left: 15px; }
+
+#title-categorias {
+  margin: 25px 0;
+  color: aliceblue; }
+
+#custom-navbar {
+  background-color: #07090F !important;
+  border-radius: 6px; }
+  #custom-navbar .navbar-brand {
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; }
+  #custom-navbar .navbar-toggler {
+    border-radius: 2px;
+    padding: 0; }
+  #custom-navbar .navbar-toggler, #custom-navbar .nav-link, #custom-navbar .navbar-toggler-icon, #custom-navbar .dropdown-item {
+    color: aliceblue !important; }
+  #custom-navbar .navbar-toggler-icon {
+    background-size: 115%;
+    object-fit: cover; }
+  #custom-navbar .dropdown-menu {
+    background-color: #07090F !important;
+    border-radius: 6px; }
+    #custom-navbar .dropdown-menu .dropdown-item:hover {
+      background-color: #07090F; }
+
+.card {
+  width: 20em;
+  margin: 15px 0;
+  box-sizing: border-box;
+  background-color: #07090F;
+  border: solid 3px transparent;
+  transition: all 1s ease; }
+  .card:hover {
+    border: solid 3px #255C99;
+    transform: scale(1.1, 1.1);
+    transition: all 0.6s ease; }
+  .card img {
+    height: 300px;
+    border: none;
+    border-radius: 3px;
+    object-fit: cover; }
+  .card .card-body {
+    color: aliceblue; }
+
+.title-custom {
+  position: absolute;
+  color: aliceblue;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center; }
+
+.empresas-h2 {
+  color: aliceblue;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.empresas-h4 {
+  color: aliceblue; }
+
+.empresas-p {
+  color: gray; }
+
+.footer {
+  background-color: transparent;
+  font-weight: bold;
+  color: aliceblue;
+  margin-top: 50px; }
+  .footer .derechos-reservados {
+    margin-bottom: 0;
+    border-top: 2px solid aliceblue;
+    padding-top: 20px; }
+
+@media (min-width: 1200px) {
+  #custom-container-navbar {
+    width: 1200px;
+    margin: 0; }
+    #custom-container-navbar .navbar-brand {
+      margin-right: 300px; }
+    #custom-container-navbar .nav-link {
+      margin: 0 20px; }
+  .carousel-item img {
+    height: 500px; }
+  .custom-categorias {
+    padding-left: 1.7em;
+    margin-top: 40px; }
+  .footer {
+    margin-top: 200px; }
+    .footer h4 {
+      margin-left: 100px;
+      margin-right: 20px; }
+    .footer h4, .footer p {
+      display: inline-block; }
+    .footer h2 {
+      text-align: center;
+      margin-bottom: 60px;
+      text-decoration: underline; }
+    .footer .derechos-reservados {
+      text-align: center;
+      margin-top: 50px; } }
+
+@media (max-width: 576px) {
+  .custom-categorias {
+    padding-left: 1.7rem; }
+  .info-compra {
+    height: 300px; }
+    .info-compra .info-compra-item {
+      margin: 10px 0; } }

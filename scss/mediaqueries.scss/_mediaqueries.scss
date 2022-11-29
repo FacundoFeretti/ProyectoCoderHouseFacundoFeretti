@@ -1,0 +1,66 @@
+@media (min-width:1200px){
+    
+    #custom-container-navbar{
+        width: 1200px;
+        margin: 0;
+        .navbar-brand{
+            margin-right: 300px;
+        }
+        .nav-link{
+            margin: 0 20px;
+        }    
+    }
+
+    .carousel-item img{
+        height: 500px;    
+    }
+
+    .custom-categorias{
+        padding-left: 1.7em;
+        margin-top: 40px ;
+    }
+
+    .footer{
+        margin-top: 200px;
+        h4{
+            margin-left: 100px;
+            margin-right: 20px;
+        }
+    
+        h4, p{
+            display: inline-block;
+        }
+    
+        h2{
+            text-align: center;
+            margin-bottom: 60px;
+            text-decoration: underline;
+        }
+        
+        .derechos-reservados{
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+
+
+}
+
+
+@media (max-width:576px){
+    
+
+    .custom-categorias{
+        padding-left: 1.7rem;
+    }
+    
+    .info-compra{
+        height: 300px;
+        .info-compra-item{
+    
+            margin: 10px 0;    
+        }
+    }
+    
+    }
+    
