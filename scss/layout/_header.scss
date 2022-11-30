@@ -1,5 +1,5 @@
 #custom-navbar{
-    background-color: #07090F !important;
+    background-color: $color2 !important;
     border-radius: 6px;
     .navbar-brand{
         color: $color1;
@@ -16,6 +16,7 @@
     .navbar-toggler-icon{
         background-size: 115%;
         object-fit: cover;
+        background-color: $color1;
         
     }
     .dropdown-menu{

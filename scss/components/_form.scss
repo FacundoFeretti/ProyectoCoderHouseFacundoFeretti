@@ -1,0 +1,22 @@
+.custom-form{
+    color: $color3;
+    margin-top: 100px;
+}
+
+.btn, .btn-primary{
+     background-color: $color3;
+     border-color: $color3;
+     width: 20vw;
+     &:hover{
+        background-color: $color2;
+        border-color: $color2;
+     }
+     &:active{
+        background-color: $color2;
+        border-color: $color2;
+     }
+     &:focus{        
+        background-color: $color2;
+        border-color: $color2;
+    }
+}

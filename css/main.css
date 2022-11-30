@@ -1,6 +1,6 @@
 body {
   background-image: linear-gradient(#07090F, #262626);
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Ubuntu', sans-serif; }
 
 main {
   text-align: center; }
@@ -50,7 +50,8 @@ a:hover {
     color: aliceblue !important; }
   #custom-navbar .navbar-toggler-icon {
     background-size: 115%;
-    object-fit: cover; }
+    object-fit: cover;
+    background-color: aliceblue; }
   #custom-navbar .dropdown-menu {
     background-color: #07090F !important;
     border-radius: 6px; }
@@ -60,12 +61,13 @@ a:hover {
 .card {
   width: 20em;
   margin: 15px 0;
+  box-shadow: 2px 2px 8px 2px aliceblue;
   box-sizing: border-box;
   background-color: #07090F;
   border: solid 3px transparent;
   transition: all 1s ease; }
   .card:hover {
-    border: solid 3px #255C99;
+    border: solid 3px #2b303a;
     transform: scale(1.1, 1.1);
     transition: all 0.6s ease; }
   .card img {
@@ -84,6 +86,9 @@ a:hover {
   margin: 0 auto;
   text-align: center; }
 
+h1, h2, .contacto-p {
+  color: aliceblue; }
+
 .empresas-h2 {
   color: aliceblue;
   font-weight: bold;
@@ -94,6 +99,34 @@ a:hover {
 
 .empresas-p {
   color: aliceblue; }
+
+.custom-form {
+  color: #2b303a;
+  margin-top: 100px; }
+
+.btn, .btn-primary {
+  background-color: #2b303a;
+  border-color: #2b303a;
+  width: 20vw; }
+  .btn:hover, .btn-primary:hover {
+    background-color: #07090F;
+    border-color: #07090F; }
+  .btn:active, .btn-primary:active {
+    background-color: #07090F;
+    border-color: #07090F; }
+  .btn:focus, .btn-primary:focus {
+    background-color: #07090F;
+    border-color: #07090F; }
+
+.animation-empresas {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: aliceblue;
+  transition: all 0.6s ease; }
+  .animation-empresas:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 1s ease; }
 
 .footer-contacto {
   background-color: transparent;
@@ -117,6 +150,64 @@ a:hover {
   border-top: 2px solid aliceblue;
   padding-top: 20px;
   color: aliceblue; }
+
+.custom-grid {
+  margin-top: 6vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "animation1 empresas1 empresas1 animation2" ". empresas2 empresas2 ." "animation3 empresas3 empresas3 animation4" ". empresas4 empresas4 ."; }
+  .custom-grid .empresas-grid1 {
+    grid-area: empresas1; }
+  .custom-grid .empresas-grid2 {
+    grid-area: empresas2; }
+  .custom-grid .empresas-grid3 {
+    grid-area: empresas3; }
+  .custom-grid .empresas-grid4 {
+    grid-area: empresas4; }
+  .custom-grid .grid-animation1 {
+    grid-area: animation1; }
+  .custom-grid .grid-animation2 {
+    grid-area: animation2; }
+  .custom-grid .grid-animation3 {
+    grid-area: animation3; }
+  .custom-grid .grid-animation4 {
+    grid-area: animation4; }
+
+.sobreNosotros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  grid-template-areas: "p1 image1 image1 image1" "image2 image2 p2 p2"; }
+  .sobreNosotros .sobreNosotros__p--1 {
+    color: aliceblue;
+    grid-area: p1;
+    padding: 30px; }
+    .sobreNosotros .sobreNosotros__p--1::first-letter {
+      color: wheat;
+      font-size: 1.5em;
+      margin-right: 1px; }
+  .sobreNosotros .sobreNosotros__p--2 {
+    color: aliceblue;
+    grid-area: p2;
+    padding: 30px; }
+    .sobreNosotros .sobreNosotros__p--2::first-letter {
+      color: wheat;
+      font-size: 1.5em;
+      margin-right: 1px; }
+  .sobreNosotros .sobreNosotros__img--1 {
+    grid-area: image1;
+    width: 60vw;
+    height: 400px;
+    padding-left: 70px; }
+  .sobreNosotros .sobreNosotros__img--2 {
+    padding-left: 50px;
+    grid-area: image2; }
 
 @media (min-width: 1200px) {
   #custom-container-navbar {
@@ -161,4 +252,66 @@ a:hover {
     .social-media .social-media-icon {
       height: 40px;
       width: 40px;
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  .animation-empresas {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-color: aliceblue; }
+  .custom-grid {
+    margin-top: 6vh;
+    padding: 0 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "empresas1" "animation1" "empresas2" "animation2" "empresas3" "animation3" "empresas4" "animation4"; }
+    .custom-grid .empresas-grid1 {
+      grid-area: empresas1; }
+    .custom-grid .empresas-grid2 {
+      grid-area: empresas2; }
+    .custom-grid .empresas-grid3 {
+      grid-area: empresas3; }
+    .custom-grid .empresas-grid4 {
+      grid-area: empresas4; }
+    .custom-grid .grid-animation1 {
+      grid-area: animation1; }
+    .custom-grid .grid-animation2 {
+      grid-area: animation2; }
+    .custom-grid .grid-animation3 {
+      grid-area: animation3; }
+    .custom-grid .grid-animation4 {
+      grid-area: animation4; }
+  .sobreNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "p1" "image1" "p2" "image2"; }
+    .sobreNosotros .sobreNosotros__p--1 {
+      color: aliceblue;
+      grid-area: p1;
+      padding: 30px; }
+      .sobreNosotros .sobreNosotros__p--1::first-letter {
+        color: wheat;
+        font-size: 1.5em;
+        margin-right: 1px; }
+    .sobreNosotros .sobreNosotros__p--2 {
+      color: aliceblue;
+      grid-area: p2; }
+      .sobreNosotros .sobreNosotros__p--2::first-letter {
+        color: wheat;
+        font-size: 1.5em;
+        margin-right: 1px; }
+    .sobreNosotros .sobreNosotros__img--1 {
+      grid-area: image1;
+      width: 100vw;
+      height: 30vh;
+      padding-left: 0; }
+    .sobreNosotros .sobreNosotros__img--2 {
+      grid-area: image2;
+      width: 100vw;
+      height: 30vh;
+      padding-left: 0; } }
