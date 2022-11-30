@@ -188,7 +188,7 @@ h1, h2, .contacto-p {
     color: aliceblue;
     grid-area: p1;
     padding: 30px; }
-    .sobreNosotros .sobreNosotros__p--1::first-letter {
+    .sobreNosotros .sobreNosotros__p--1::first-letter, .sobreNosotros .sobreNosotros__p--2::first-letter {
       color: wheat;
       font-size: 1.5em;
       margin-right: 1px; }
@@ -197,9 +197,7 @@ h1, h2, .contacto-p {
     grid-area: p2;
     padding: 30px; }
     .sobreNosotros .sobreNosotros__p--2::first-letter {
-      color: wheat;
-      font-size: 1.5em;
-      margin-right: 1px; }
+      text-decoration: underline; }
   .sobreNosotros .sobreNosotros__img--1 {
     grid-area: image1;
     width: 60vw;
@@ -294,17 +292,8 @@ h1, h2, .contacto-p {
       color: aliceblue;
       grid-area: p1;
       padding: 30px; }
-      .sobreNosotros .sobreNosotros__p--1::first-letter {
-        color: wheat;
-        font-size: 1.5em;
-        margin-right: 1px; }
     .sobreNosotros .sobreNosotros__p--2 {
-      color: aliceblue;
       grid-area: p2; }
-      .sobreNosotros .sobreNosotros__p--2::first-letter {
-        color: wheat;
-        font-size: 1.5em;
-        margin-right: 1px; }
     .sobreNosotros .sobreNosotros__img--1 {
       grid-area: image1;
       width: 100vw;

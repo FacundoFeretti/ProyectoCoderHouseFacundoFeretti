@@ -131,7 +131,6 @@
 
     // // // GRID SOBRE NOSOTROS
 
-    // // // GRID SOBRE NOSOTROS
 
     .sobreNosotros{
         display: grid;
@@ -148,21 +147,13 @@
             color: $color1;
             grid-area: p1;
             padding: 30px;
-            &::first-letter{
-                color: wheat;
-                font-size: 1.5em;
-                margin-right: 1px;
-            }
+
+            
         }
 
         .sobreNosotros__p--2{
-            color: $color1;
             grid-area: p2;
-            &::first-letter{
-                color: wheat;
-                font-size: 1.5em;
-                margin-right: 1px;
-            }
+
         }
         
         .sobreNosotros__img--1{

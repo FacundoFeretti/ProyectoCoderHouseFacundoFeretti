@@ -69,10 +69,10 @@
         grid-area: p2;
         padding: 30px;
         &::first-letter{
-            color: wheat;
-            font-size: 1.5em;
-            margin-right: 1px;
+        text-decoration: underline;
+        @extend .sobreNosotros__p--1::first-letter        
         }
+        
     }
     
     .sobreNosotros__img--1{
