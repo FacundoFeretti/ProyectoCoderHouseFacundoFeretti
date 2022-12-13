@@ -1,11 +1,20 @@
+@keyframes empresas{
+    10%{
+        transform: skew(1deg, 1deg)
+    }
+    20%{
+        transform: skew(-1deg, -1deg)
+    }
+    50%{
+        transform: scale(1.1);
+    }
+
+}
+
 .animation-empresas{
     border-radius: 50%;
     height: 200px;
     width: 200px;
     background-color: $color1;
-    transition: all 0.6s ease;
-    &:hover{
-    transform: scale(1.2,1.2);
-    transition: all 1s ease;
-    }
+    animation: 3s ease-in-out infinite empresas 1000ms;
 }

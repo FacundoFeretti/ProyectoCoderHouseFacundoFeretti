@@ -1,6 +1,7 @@
 #custom-navbar{
-    background-color: $color2 !important;
+    background-color: transparent !important;
     border-radius: 6px;
+    border: 2px solid #001d3d;
     .navbar-brand{
         color: $color1;
         font-weight: bold;

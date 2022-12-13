@@ -1,28 +1,65 @@
-.footer-contacto{
-    background-color: transparent;
-    font-weight: bold;
-    color: $color1;
-    margin-top: 50px;
+.footer{
+    display: grid;
+    grid-template: 90% 10% / 1fr 1fr;
+    position: relative;
+    margin-top: 20vh;
 }
 
+.footer::before{
+    content: " ";
+    background-image:url(https://pngimage.net/wp-content/uploads/2018/06/wallpaper-tecnologia-png-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    opacity: 0.4;
+
+}
+
+.footer-contacto{
+    background-color: rgba(248, 250, 255, 0.05);
+    font-weight: bold;
+    color: $color1;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+
+
 .social-media{
-    width: 98vw;
+    grid-area: 1 / 2 / 2 / 3;
     display: flex;
-    gap: 1vw;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: -20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 20vw;
+    
 
     .social-media-icon{
         height: 30px;
         width: 30px;
+        margin-right: 1vw;
     }
     
+    #brand-footer{
+        color: $color1;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+
+    a{
+        color: $color1;
+        text-decoration: none;
+    }
 }
 
 .derechos-reservados{
+    grid-area: 2 / 1 / 3 / 3;
     margin-bottom: 0;
     border-top: 2px solid $color1;
-    padding-top: 20px;
     color: $color1;
 }
