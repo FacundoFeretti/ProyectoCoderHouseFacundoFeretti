@@ -1,0 +1,10 @@
+@mixin sobreNosotrosImg($number-img, $width-img, $height-img, $grid-area){
+    .sobreNosotros__img--#{$number-img}{
+        justify-self: center;
+        border: solid 2px $color3;
+        border-radius: 40px;
+        width: $width-img;
+        height: $height-img;
+        grid-area: $grid-area;
+    }
+}

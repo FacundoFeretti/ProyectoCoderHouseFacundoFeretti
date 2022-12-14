@@ -1,7 +1,8 @@
+
 @media (min-width:1200px){
     
     #custom-container-navbar{
-        width: 1200px;
+        width: 100vw;
         margin: 0;
         .navbar-brand{
             margin-right: 300px;
@@ -13,6 +14,20 @@
 
     .carousel-item img{
         height: 500px;    
+    }
+
+    .info-compra{
+        margin: 8vh auto;
+        height: 12vh;
+        width: 85vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .info-compra-item{
+            p{
+                display: inline-block;
+            }
+        }
     }
 
     .custom-categorias{
@@ -41,36 +56,37 @@
         text-align: center;
     
     }
+
+    .custom-form{
+        width: 99vw;
+    }
 }
 
 @media (min-width:576px) and (max-width:1200px){
-
-    .info-compra{
-        height: 35vh;
     
-    }
-
-    .row{
-        gap: 20px;
-    }
-
-    .info-compra-item{
-        height: 10vh;
-        padding: 0;
-        border-top: solid 1px $color1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &:first-child{
-        border-top: none;
+    .info-compra{
+        height: 36vh;
+    
+        .info-compra-item{
+            height: 12vh;
+            padding: 0;
+            border-top: solid 1px $color1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            &:first-child{
+            border-top: none;
+            }
         }
     }
 
+
     .custom-categorias{
-        display: flex;
-        justify-content: center;
+        padding: 25px;
     }
+
+
 
     .sobreNosotros{
         display: grid;
@@ -120,7 +136,10 @@
 
 
 @media (max-width:576px){
-    
+   *{
+    overflow-x: hidden;
+   }
+
    #productos-row{
     display: inline-block;
    }
@@ -128,6 +147,7 @@
    .custom-categorias{
     display: flex;
     justify-content: center;
+    
    }
 
    .card{
@@ -135,9 +155,23 @@
    }
     
     .info-compra{
-        height: 300px;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6vh;
         .info-compra-item{
-            margin: 10px 0;    
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid gray ;
+            &:first-child{
+                border: none;
+            }
+
+            p{
+                margin: 0 12px;
+            }
         }
     }
     
@@ -269,6 +303,8 @@
             display: grid;
             grid-template: auto auto / 50vw 50vw;
             padding: 0;
+            row-gap: 20;
+            column-gap: 0;
             
             
             a{
@@ -280,6 +316,10 @@
 
         .derechos-reservados{
             grid-area: 3 / 1 / 4 / 2;
+        }
+
+        #brand-footer{
+            margin-left: -6px;
         }
 
     }

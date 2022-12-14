@@ -56,7 +56,8 @@
     .sobreNosotros__p--1{
         color: $color1;
         grid-area: p1;
-        padding: 30px;
+        justify-self: center;
+        padding-left: 4vw;
         &::first-letter{
             color: wheat;
             font-size: 1.5em;
@@ -67,23 +68,17 @@
     .sobreNosotros__p--2{
         color: $color1;
         grid-area: p2;
-        padding: 30px;
+        padding: 0 6vw;
         &::first-letter{
         text-decoration: underline;
-        @extend .sobreNosotros__p--1::first-letter        
+        @extend .sobreNosotros__p--1::first-letter ;    
         }
         
     }
-    
-    .sobreNosotros__img--1{
-        grid-area: image1;
-        width: 60vw;
-        height: 400px;
-        padding-left: 70px;
-    }
-    
-    .sobreNosotros__img--2{
-        padding-left: 50px;
-        grid-area: image2;
-    }
+
+    @include sobreNosotrosImg(1, 60vw, 400px, image1);
+
+    @include sobreNosotrosImg(2, auto, auto, image2);
+
+
 }

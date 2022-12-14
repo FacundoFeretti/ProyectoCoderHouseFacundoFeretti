@@ -12,7 +12,7 @@
         padding: 0;
     }
     .navbar-toggler, .nav-link, .navbar-toggler-icon, .dropdown-item{
-        color: $color1 !important;
+        color: $color1;
     }
     .navbar-toggler-icon{
         background-size: 115%;
@@ -21,15 +21,13 @@
         
     }
     .dropdown-menu{
-        background-color: #07090F !important;
+        background-color: #000814;
         border-radius: 6px;
         .dropdown-item:hover{
             background-color: #07090F;
-        
         }
     
     }
-
 }
 
 

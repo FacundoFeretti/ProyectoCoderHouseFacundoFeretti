@@ -1,5 +1,6 @@
+
 body{
-    background: linear-gradient(#000814, #001d3d);
+    background: linear-gradient(#000814 70%, #001d3d);
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -8,8 +9,8 @@ main{
 }
 
 a:hover{
-    font-weight: bolder !important;
-    color: $color1 !important;
+    font-weight: bolder;
+    color: $color1;
 }
 
 .carousel-item img{
@@ -18,14 +19,11 @@ a:hover{
 
 .info-compra{
     background-color: $color3;
-    text-align: center;
     border-radius: 4px;
     color: wheat;
     font-weight: bold;
-    height: 100px;
-    margin-top: 1em;
     .info-compra-item{
-        padding-top: 25px;
+        display: inline-block;
         img{
             transform: rotate(0deg);
             transition: all 1s ease;
@@ -35,7 +33,6 @@ a:hover{
             }
         }
         p{
-            display: inline-block;
             margin-left: 15px;
         
         }
